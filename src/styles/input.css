@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+.franklin {
+    font-family: "Libre Franklin",sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight:750;
+    font-style: normal;
+  }
+
+.rajdhani {
+  font-family: 'Rajdhani', sans-serif !important;
+  font-weight: 500;
+  font-style: normal  ;
+
+}
+
+.font-color{
+  color: #00a1e4;
+}
+
+.font-color-bg{
+  background-color: #00a1e4;
+}
+
+header{
+  max-width: 90% !important;
+}
+
+
+
+.custom-border:hover {
+  border-left: 4px solid #00a1e4; /* Color del borde personalizado */
+  transition: all 0.3s; /* Transición */
+  border-radius: 1.5rem; /* Borde redondeado (3xl) */
+}
