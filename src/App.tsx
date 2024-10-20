@@ -4,7 +4,7 @@ import  CustomNavbar  from './components/CustomNavbar';
 import MainData from './components/MainData';
 import Project from './components/Project';
 import Tecnologies from './components/Tecnologies';
-
+import Attestation from './components/Attestation';
 function App() {
 
 
@@ -17,6 +17,7 @@ function App() {
         <Tecnologies/>
         <Project/>
         <Contact/>
+        <Attestation/>
         </div>
         </>
     );

@@ -10,7 +10,7 @@ export default function Project() {
         </h2>
       </div>
 
-      <div className="w-full bg-black flex flex-wrap items-center justify-around flex-col md:flex-row gap-6">
+      <div className="w-full bg-black flex flex-wrap items-center justify-center flex-col md:flex-row gap-6">
         {DataProject.map((project, index) => (
           <div
             key={index}

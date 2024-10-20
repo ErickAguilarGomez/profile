@@ -1,9 +1,6 @@
 
 import TecnologyIcon from "../data/TecnologyIcon"
-
 export default function Tecnologies() {
-
-
     return (
         <>
             <div className="w-full bg-black">
