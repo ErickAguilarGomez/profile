@@ -30,7 +30,26 @@ header{
 
 
 .custom-border:hover {
-  border-left: 4px solid #00a1e4; /* Color del borde personalizado */
-  transition: all 0.3s; /* Transición */
-  border-radius: 1.5rem; /* Borde redondeado (3xl) */
+  border-left: 4px solid #00a1e4; 
+  transition: all 0.3s; 
+  border-radius: 1.5rem;
+}
+
+.custom-xborder:hover {
+  border-top: 4px solid #00a1e4; 
+  border-bottom: 4px solid #00a1e4; 
+
+  transition: all 0.3s;
+  border-radius: 1.5rem; 
+}
+
+.filter-invert {
+  filter: invert(100%);
+}
+
+.links:active {
+  border: 4px solid #00a1e4;
+  transition: all 0.3s;
+  padding: 4px;
+  border-radius: 1.5rem;
 }
