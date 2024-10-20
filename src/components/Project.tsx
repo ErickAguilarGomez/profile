@@ -4,13 +4,13 @@ export default function Project() {
 
   return (
     <>
-      <div className="w-full bg-black">
+      <div className="w-full bg-black pt-20">
         <h2 className="text-white text-center rajdhani text-4xl tracking-widest bg-black">
           PROYECTOS
         </h2>
       </div>
 
-      <div className="w-full bg-black flex flex-wrap items-center justify-center flex-col md:flex-row gap-6">
+      <div className="w-full bg-black flex flex-wrap items-center justify-center flex-col md:flex-row gap-6 pt-20">
         {DataProject.map((project, index) => (
           <div
             key={index}
