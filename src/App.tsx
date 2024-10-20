@@ -16,8 +16,8 @@ function App() {
         <AboutMe/>
         <Tecnologies/>
         <Project/>
-        <Contact/>
         <Attestation/>
+        <Contact/>
         </div>
         </>
     );

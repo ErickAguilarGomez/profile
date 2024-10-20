@@ -14,7 +14,7 @@ export default function Project() {
         {DataProject.map((project, index) => (
           <div
             key={index}
-            className="flex w-1/2 md:w-96 border-white border-3 rounded flex-col md:flex-row"
+            className="flex w-1/2 md:w-96 custom-rborder flex-col md:flex-row"
           >
             <img
               src={project.img}

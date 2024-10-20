@@ -35,6 +35,11 @@ header{
   border-radius: 1.5rem;
 }
 
+
+.custom-rborder {
+  border-right: 4px solid #00a1e4; 
+}
+
 .custom-xborder:hover {
   border-top: 4px solid #00a1e4; 
   border-bottom: 4px solid #00a1e4; 
