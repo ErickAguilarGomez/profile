@@ -55,6 +55,7 @@ export default function AboutMe() {
                                 Como profesional, me destaco por mi naturaleza autodidacta y mi firme compromiso con el aprendizaje continuo. La búsqueda constante de conocimiento y la exploración de las últimas tendencias en diseño y tecnología son aspectos fundamentales en mi carrera.                        </p>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </>

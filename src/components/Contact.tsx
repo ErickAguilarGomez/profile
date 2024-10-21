@@ -21,7 +21,7 @@ export default function Contact() {
           <iframe
             id="formmy-iframe"
             title="formmy"
-            width="360"
+            width="560"
             height="560"
             src="https://formmy.app/embed/671581e42a7a083d6f9efca0"
             style={{

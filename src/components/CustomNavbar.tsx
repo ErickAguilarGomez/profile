@@ -44,7 +44,7 @@ export default function CustomNavbar() {
                         key={item.ref}
                         href={`#${item.ref}`}
                         className="block px-4 py-2 hover:bg-blue-500"
-                        onClick={() => setIsMenuOpen(false)} // Cierra el menú al hacer clic
+                        onClick={() => setIsMenuOpen(false)} 
                     >
                         {item.name}
                     </a>
