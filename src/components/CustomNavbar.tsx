@@ -1,20 +1,12 @@
 import { useState } from 'react';
-
+import menuItems from '../data/MenuItems';
 export default function CustomNavbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    
-    const menuItems = [
-        { name: 'Inicio', ref: 'main-data' },
-        { name: 'Sobre Mi', ref: 'about-me' },
-        { name: 'Proyectos', ref: 'projects' },
-        { name: 'Certificados', ref: 'attestation' },
-        { name: 'Contacto', ref: 'contact-me' }
-    ];
 
     return (
         <nav className="fixed top-0 left-0 w-full bg-black text-white z-50">
             <div className="container mx-auto flex justify-between items-center p-4">
-                <div className="text-lg font-bold tracking-widest">ERICK AGUILAR</div>
+                <div className="text-lg font-bold tracking-widest"><a href="#main-data">ERICK AGUILAR</a></div>
                 <div className="hidden md:flex space-x-4">
                     {menuItems.map((item) => (
                         <a
