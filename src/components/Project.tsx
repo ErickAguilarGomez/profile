@@ -4,7 +4,7 @@ export default function Project() {
 
   return (
     <>
-      <div className="w-full bg-black pt-20">
+      <div className="w-full bg-black pt-20" id="projects">
         <h2 className="text-white text-center rajdhani text-4xl tracking-widest bg-black">
           PROYECTOS
         </h2>

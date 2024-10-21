@@ -1,76 +1,63 @@
 import { useState } from 'react';
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link } from '@nextui-org/react';
 
 export default function CustomNavbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const menuItems = ['Inicio','Sobre mí','Proyectos','Certificados','Contactos'];
+    
+    const menuItems = [
+        { name: 'Inicio', ref: 'main-data' },
+        { name: 'Sobre Mi', ref: 'about-me' },
+        { name: 'Proyectos', ref: 'projects' },
+        { name: 'Certificados', ref: 'attestation' },
+        { name: 'Contacto', ref: 'contact-me' }
+    ];
 
     return (
-        <Navbar onMenuOpenChange={setIsMenuOpen} className='bg-black'>
-            
-            <NavbarContent>
-                <NavbarMenuToggle
-                    aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-                    className="sm:hidden text-white"
-                />
-                <NavbarBrand>
-                <p className='text-white text-lg franklin tracking-widest'>ERICK AGUILAR</p>
-                </NavbarBrand>
-            </NavbarContent>
-
-            <NavbarContent className="hidden sm:flex gap-4" justify="center">
-                <NavbarItem>
-                    <Link className='text-white' href="#">
-                        Inicio
-                    </Link>
-                </NavbarItem>
-                <NavbarItem isActive>
-                    <Link href="#" aria-current="page"  className='text-white'>
-                        Sobre mí
-                    </Link>
-                </NavbarItem>
-                <NavbarItem>
-                    <Link className='text-white' href="#">
-                        Proyectos
-                    </Link>
-                </NavbarItem>
-
-                <NavbarItem>
-                    <Link className='text-white' href="#">
-                        Certificados
-                    </Link>
-                </NavbarItem>
-
-                <NavbarItem>
-                    <Link className='text-white' href="#">
-                        Contactos
-                    </Link>
-                </NavbarItem>
-            </NavbarContent>
-
-            <NavbarMenu className='bg-white'>
-                {menuItems.map((item, index) => (
-                    <NavbarMenuItem key={`${item}-${index}`}>
-                        <Link
-                            color={
-                                index === 2
-                                    ? 'foreground'
-                                    : index === menuItems.length - 1
-                                        ? 'foreground'
-                                        : 'foreground'
-                            }
-                            className="w-full"
-                            href="#"
-                            size="lg"
+        <nav className="fixed top-0 left-0 w-full bg-black text-white z-50">
+            <div className="container mx-auto flex justify-between items-center p-4">
+                <div className="text-lg font-bold tracking-widest">ERICK AGUILAR</div>
+                <div className="hidden md:flex space-x-4">
+                    {menuItems.map((item) => (
+                        <a
+                            key={item.ref}
+                            href={`#${item.ref}`}
+                            className="hover:text-blue-400"
                         >
-                            {item}
-                        </Link>
-                    </NavbarMenuItem>
+                            {item.name}
+                        </a>
+                    ))}
+                </div>
+                <button
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    className="md:hidden focus:outline-none"
+                    aria-label={isMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
+                >
+                    <svg
+                        className="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        {isMenuOpen ? (
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                        ) : (
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        )}
+                    </svg>
+                </button>
+            </div>
+            <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} bg-black`}>
+                {menuItems.map((item) => (
+                    <a
+                        key={item.ref}
+                        href={`#${item.ref}`}
+                        className="block px-4 py-2 hover:bg-blue-500"
+                        onClick={() => setIsMenuOpen(false)} // Cierra el menú al hacer clic
+                    >
+                        {item.name}
+                    </a>
                 ))}
-            </NavbarMenu>
-        </Navbar>
+            </div>
+        </nav>
     );
 }
-
-
-

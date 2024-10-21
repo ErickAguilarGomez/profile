@@ -19,7 +19,9 @@ export default function MainData() {
 
     return (
         <>
-            <div className='flex flex-col md:flex-row items-center justify-center bg-black  lg:w-3/4 m-0 p-0  lg:m-auto xl:m-auto 2xl:m-auto'>
+        <hr id='main-data' />
+        
+            <div className='flex flex-col md:flex-row items-center justify-center bg-black  lg:w-3/4 m-0 p-0  lg:m-auto xl:m-auto 2xl:m-auto mt-20'>
                 <div className='max-w-screen-md w-full md:w-1/2 my-0 md:my-8'>
                     <div className='w-full bg-black text-center'>
                         <p className='text-white rajdhani text-xl md:text-3xl xl:text-4xl tracking-widest whitespace-nowrap'>
@@ -56,7 +58,7 @@ export default function MainData() {
 
                 </div>
 
-                <div className='max-w-screen-md w-full md:w-1/2 flex justify-center'>
+                <div className='max-w-screen-md w-full md:w-1/2 flex justify-center lg:mt-20'>
                     <img
                         className='w-52 h-52 my-4 md:w-80 md:my-0 md:h-80 object-cover rounded-full border-4 border-white'
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNhkfsdmPu9wcqsQDLrxBQqkCi5aSaLGmI8w&s"

@@ -3,7 +3,7 @@ import Datacertificates from "../data/Datacertificates";
 export default function Attestation() {
     return (
         <>
-            <div className="w-full bg-black pt-20">
+            <div className="w-full bg-black pt-20" id="attestation">
                 <h2 className="text-white text-center rajdhani text-4xl tracking-widest bg-black">
                     CERTIFICADOS
                 </h2>

@@ -1,8 +1,8 @@
 export default function AboutMe() {
     return (
         <>
-            <div className="w-full">
-                <h2 className="text-white text-center rajdhani text-4xl tracking-widest bg-black pt-20">SOBRE MI</h2>
+            <div className="w-full mt-7">
+                <h2 className="text-white text-center rajdhani text-4xl tracking-widest bg-black pt-20" id="about-me">SOBRE MI</h2>
             </div>
             <div className="bg-black flex flex-wrap w-full justify-center">
                 <div className="w-3/4 flex flex-wrap">
