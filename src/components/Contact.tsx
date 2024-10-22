@@ -29,6 +29,7 @@ export default function Contact() {
               display: "flex",
               justifyContent: "center",
             }}
+            className="w-full"
           ></iframe>
 
           <hr className="w-full border-t border-gray-600"></hr>

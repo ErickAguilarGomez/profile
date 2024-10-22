@@ -14,26 +14,26 @@ export default function Project() {
         {DataProject.map((project, index) => (
           <div
             key={index}
-            className="flex w-1/2 md:w-96 custom-rborder flex-col md:flex-row"
+            className="flex w-1/2 h-auto  md:h-52  md:w-96 custom-rborder  flex-col md:flex-row"
           >
             <img
               src={project.img}
               alt={project.title}
-              className="w-full md:w-1/2 rounded"
+              className="w-full h-auto md:h-full md:w-1/2 rounded"
             />
             <div className="flex flex-col flex-wrap text-center w-full md:w-1/2 justify-around">
               <span className="rajdhani text-2xl xl:text-3xl text-white">
                 {project.title}
               </span>
               <div className="text-white text-xs md:text-base flex flex-col">
-                <div className="flex flex-row justify-evenly flex-wrap md:flex-nowrap md:justify-around">
+                <div className="flex flex-row justify-evenly flex-wrap text-center">
                   {project.tecnologies.length > 0 &&
                     project.tecnologies.map((tecno, i) => (
-                      <p key={i}>{tecno}</p>
+                      <p key={i} className="w-1/2 md:w-auto m-auto">{tecno}</p>
                     ))}
                 </div>
-                <div className="flex flex-row justify-center md:justify-around font-color">
-                  <a href={project.page} className="flex links">
+                <div className="flex flex-row justify-center md:justify-around font-color pt-2">
+                  <a href={project.page} className="flex links" target="_blank">
                     <img
                       src="https://img.icons8.com/?size=100&id=58308&format=png"
                       alt="visitar"
@@ -41,7 +41,7 @@ export default function Project() {
                     />
                     Visitar
                   </a>
-                  <a href={project.code} className="flex links">
+                  <a href={project.code} className="flex links" target="_blank  ">
                     <img
                       src="https://img.icons8.com/?size=100&id=62856&format=png"
                       alt="codigo"
