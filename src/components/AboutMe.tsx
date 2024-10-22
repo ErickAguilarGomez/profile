@@ -52,7 +52,7 @@ export default function AboutMe() {
                         <div className="flex flex-wrap flex-col items-center">
                             <h1 className="rajdhani text-base md:text-xl xl:text-2xl font-color w-full text-center">ESTUDIOS</h1>
                             <p className="text-white w-full">
-                                Como profesional, me destaco por mi naturaleza autodidacta y mi firme compromiso con el aprendizaje continuo. La búsqueda constante de conocimiento y la exploración de las últimas tendencias en diseño y tecnología son aspectos fundamentales en mi carrera.                        </p>
+                            Como profesional, combino mi naturaleza autodidacta con una sólida formación académica en el Instituto San Ignacio de Loyola y 4Geeks Academy. Mi firme compromiso con el aprendizaje continuo me impulsa a explorar constantemente las últimas tendencias en diseño y tecnología, asegurando que siempre esté actualizado con las mejores prácticas y herramientas del sector.</p>
                         </div>
                     </div>
                     
