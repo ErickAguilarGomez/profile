@@ -64,7 +64,7 @@ export default function MainData() {
                 <div className="max-w-screen-md w-full md:w-1/2 flex justify-center lg:mt-20">
                     <img
                         className="w-52 h-52 my-4 md:w-80 md:my-0 md:h-80 object-cover rounded-full border-4 border-white"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNhkfsdmPu9wcqsQDLrxBQqkCi5aSaLGmI8w&s"
+                        src="https://res.cloudinary.com/da2fsfcsn/image/upload/v1729635268/perfil_aosb4x.jpg"
                         alt="imagen de mi"
                     />
                 </div>
