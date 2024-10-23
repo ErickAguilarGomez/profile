@@ -38,12 +38,12 @@ export default function CustomNavbar() {
                     </svg>
                 </button>
             </div>
-            <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} bg-black`}>
+            <div className={`h-screen md:hidden ${isMenuOpen ? 'block' : 'hidden'} bg-black flex-col`}>
                 {menuItems.map((item) => (
                     <a
                         key={item.ref}
                         href={`#${item.ref}`}
-                        className="block px-4 py-2 text-gray-700 hover:bg-blue-500 transition-colors duration-300 ease-in-out"
+                        className="block px-4 py-2 text-center hover:bg-blue-500 transition-colors duration-300 ease-in-out"
                         onClick={() => setIsMenuOpen(false)} 
                     >
                         {item.name}
