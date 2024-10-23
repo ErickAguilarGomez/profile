@@ -43,7 +43,7 @@ export default function CustomNavbar() {
                     <a
                         key={item.ref}
                         href={`#${item.ref}`}
-                        className="block px-4 py-2 hover:bg-blue-500"
+                        className="block px-4 py-2 text-gray-700 hover:bg-blue-500 transition-colors duration-300 ease-in-out"
                         onClick={() => setIsMenuOpen(false)} 
                     >
                         {item.name}
