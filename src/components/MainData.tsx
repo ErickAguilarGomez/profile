@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@nextui-org/react";
 import socialLinks from "../data/SocialLinks";
+import  profileImage from "../assets/PERFIL2.png"
 export default function MainData() {
     const fullText = "Full stack Developer";
     const [displayedText, setDisplayedText] = useState("");
@@ -64,7 +65,7 @@ export default function MainData() {
                 <div className="max-w-screen-md w-full md:w-1/2 flex justify-center lg:mt-20">
                     <img
                         className="w-52 h-52 my-4 md:w-80 md:my-0 md:h-80 object-cover rounded-full border-4 border-white"
-                        src="https://res.cloudinary.com/da2fsfcsn/image/upload/v1729635268/perfil_aosb4x.jpg"
+                        src={profileImage}
                         alt="imagen de mi"
                     />
                 </div>
