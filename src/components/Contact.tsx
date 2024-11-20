@@ -28,6 +28,8 @@ export default function Contact() {
               margin: "0 auto",
               display: "flex",
               justifyContent: "center",
+              position: 'relative',
+              left: '0'
             }}
             className="w-full"
           ></iframe>

@@ -77,3 +77,10 @@ header{
 .animate-scroll {
   animation: scroll 15s linear infinite;
 }
+
+
+.elemento {
+  display: block;
+  position: relative; /* o absolute, dependiendo del contexto */
+  left: 0;
+}
