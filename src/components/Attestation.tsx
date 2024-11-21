@@ -55,7 +55,7 @@ export default function Attestation() {
                                     </div>
 
                                     <a href={cert.link} className="flex w-1/4 justify-end my-2" target="_blank">
-                                        <img className="rounded-md w-24 h-auto elemento" src={cert.imageUrl} alt={cert.title} style={{ position: 'relative', left: '0' }}/>
+                                        <img className="rounded-md w-24 h-auto" src={cert.imageUrl} alt={cert.title} style={{ position: 'relative', left: '0' }}/>
                                     </a>
                                 </div>
                             </div>

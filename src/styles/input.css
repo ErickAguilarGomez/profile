@@ -79,8 +79,4 @@ header{
 }
 
 
-.elemento {
-  display: block;
-  position: relative; /* o absolute, dependiendo del contexto */
-  left: 0;
-}
+
